@@ -1,345 +1,172 @@
+<!--
+  GITHUB PROFILE README — Vu-Viet-Phong
+  Publish this file as: https://github.com/Vu-Viet-Phong/Vu-Viet-Phong/blob/main/README.md
+  Do NOT replace the README inside nexora-commerce-ai with this file.
+-->
+
 <div align="center">
 
-# NEXORA COMMERCE AI
+<img width="100%" alt="Vu Viet Phong — Data Science, AI Engineering and Intelligent Systems" src="https://capsule-render.vercel.app/api?type=waving&amp;height=245&amp;color=0:0B1021,45:5521A3,75:7C3AED,100:06B6D4&amp;text=VU%20VIET%20PHONG&amp;fontColor=FFFFFF&amp;fontSize=54&amp;fontAlignY=40&amp;desc=DATA%20SCIENCE%20%E2%80%A2%20AI%20ENGINEERING%20%E2%80%A2%20INTELLIGENT%20SYSTEMS&amp;descAlignY=60&amp;descSize=17&amp;animation=fadeIn&amp;section=header" />
 
-### From raw retail transactions to decision-ready customer intelligence.
+<a href="https://github.com/Vu-Viet-Phong">
+  <img alt="Animated introduction" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=600&amp;size=23&amp;duration=2900&amp;pause=900&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;width=820&amp;height=55&amp;lines=Turning+raw+data+into+real+decisions.;Building+data+products+that+actually+work.;Learn+deeply.+Build+boldly.+Ship+reliably." />
+</a>
 
-**An end-to-end data engineering, analytics, and machine learning project**  
-Built around a reproducible PostgreSQL pipeline, explainable customer segmentation, and an interactive Streamlit dashboard.
+<br />
 
-<p>
-  <a href="https://www.python.org/"><img alt="Python 3.11" src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
-  <a href="https://www.postgresql.org/"><img alt="PostgreSQL 16" src="https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"></a>
-  <a href="https://streamlit.io/"><img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"></a>
-  <a href="https://scikit-learn.org/"><img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-ML%20Baseline-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"></a>
-</p>
-
-<p>
-  <img alt="Project status: Analytics MVP merged" src="https://img.shields.io/badge/Status-Analytics%20MVP%20Merged-208050?style=flat-square">
-  <img alt="Data workflow: PostgreSQL to dashboard" src="https://img.shields.io/badge/Workflow-ETL%20%E2%86%92%20SQL%20%E2%86%92%20ML%20%E2%86%92%20BI-465A72?style=flat-square">
-  <img alt="Project focus: Learning and portfolio" src="https://img.shields.io/badge/Focus-Learning%20%26%20Portfolio-6F42C1?style=flat-square">
-</p>
-
-**[Overview](#overview)** · **[Architecture](#system-architecture)** · **[Features](#what-is-implemented)** · **[Quick Start](#quick-start)** · **[Documentation](#documentation)** · **[Roadmap](#roadmap)**
+<a href="https://github.com/Vu-Viet-Phong?tab=repositories"><img alt="GitHub repositories" src="https://img.shields.io/badge/EXPLORE-MY%20PROJECTS-6D28D9?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+<a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai"><img alt="Featured project Nexora Commerce AI" src="https://img.shields.io/badge/FEATURED-NEXORA%20AI-0891B2?style=for-the-badge&amp;logo=python&amp;logoColor=white" /></a>
+<img alt="Profile views" src="https://komarev.com/ghpvc/?username=Vu-Viet-Phong&amp;style=for-the-badge&amp;color=7C3AED&amp;label=PROFILE+VIEWS" />
 
 </div>
 
 ---
 
-## Overview
+### `> whoami`
 
-**Nexora Commerce AI** transforms the **UCI Online Retail II** dataset into an analytical foundation for e-commerce decision-making. Rather than treating machine learning as an isolated notebook, the project connects data ingestion, auditability, relational modeling, SQL reporting, customer feature engineering, unsupervised learning, and a BI interface.
-
-The current **Analytics MVP is merged into `main`** via three development pull requests:
-
-- **[PR #1 — Automated Data Quality](https://github.com/Vu-Viet-Phong/nexora-commerce-ai/pull/1)**: relational integrity, source reconciliation, and validation reporting.
-- **[PR #2 — Customer Analytics & Segmentation](https://github.com/Vu-Viet-Phong/nexora-commerce-ai/pull/2)**: customer features, EDA, rule-based RFM, and K-Means baseline.
-- **[PR #3 — Streamlit Dashboard](https://github.com/Vu-Viet-Phong/nexora-commerce-ai/pull/3)**: sales, customer, and RFM analytics in one interface.
-
-> **Project maturity:** This is an integrated **analytics MVP**, not a deployed or production-certified e-commerce service. Churn prediction, forecasting, recommendation, and deployment are future work.
-
-### Dataset at a glance
-
-| Metric | Observed during project validation |
-|:--|--:|
-| Transaction / invoice lines | **1,044,848** |
-| Distinct invoices | **53,628** |
-| Identified customers | **5,942** |
-| Products | **5,131** |
-
-<sub>These are reported results from the project's full-data validation runs, not synthetic demonstration values. Counts may depend on the cleaning rules and reporting scope; unidentified customers are not silently discarded from the underlying transactional source.</sub>
-
----
-
-## System Architecture
-
-```mermaid
-flowchart TD
-    A["UCI Online Retail II<br/>Raw Excel"] --> B["Stage 1<br/>Ingestion · Cleaning · Audit"]
-    B --> C["Processed Parquet<br/>Reproducible datasets"]
-    C --> D["PostgreSQL<br/>Relational core"]
-    D --> E["SQL Analytics Marts<br/>Sales · Customer Daily · Snapshot"]
-    C -. "Source reconciliation" .-> Q["Data Quality Engine"]
-    D -. "Integrity checks" .-> Q
-    E --> F["Customer Analytics<br/>EDA · RFM features"]
-    F --> G["Segmentation<br/>RFM rules · K-Means"]
-    E --> H["Streamlit Dashboard"]
-    G --> H
-    Q -. "Validation reports" .-> I["QA & Learning Notes"]
-    H --> J["Sales and Customer Insights"]
+```yaml
+name: Vu Viet Phong
+location: Vietnam
+education: Third-year student | International University
+passion: Statistics, Data Science & Artificial Intelligence
+focus:
+  - End-to-end data engineering
+  - Machine learning & recommendation systems
+  - Turning prototypes into usable data products
+currently_building: Nexora Commerce AI
+mindset: "Don't just train models. Build systems that matter."
 ```
 
-**Design principles**
+I'm a student and builder who enjoys working across the **full data journey**: understanding messy datasets, engineering reliable pipelines, designing useful metrics, training interpretable models, and putting the results into applications people can use.
 
-- **Traceable data:** raw data is preserved; cleaning decisions and reconciliation are documented.
-- **SQL-first analytics:** aggregate in PostgreSQL marts before loading compact customer-level features into Python.
-- **Reproducible experiments:** deterministic fixtures and documented ML assumptions.
-- **Clear metric semantics:** distinguish net/gross sales, invoice segments versus distinct orders, and lifetime snapshots versus date-filtered metrics.
-- **Safe integration:** isolated Git worktrees and database test schemas; no customer datasets or secrets in Git.
+My current interests include **data science, recommendation systems, multimodal learning, and AI-powered commerce**. I'm learning in public, one meaningful project at a time.
 
 ---
 
-## What Is Implemented
+### `01 / THE BUILD` — Featured project
 
 <table>
-  <thead>
-    <tr><th align="left">Layer</th><th align="left">Capabilities</th><th align="center">Status</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>01 · Data Engineering</strong></td><td>Checksum-aware ingestion, cleaning, deduplication rules, audit summaries, Parquet outputs</td><td align="center">Integrated</td></tr>
-    <tr><td><strong>02 · PostgreSQL</strong></td><td>Relational schema, atomic loader, reconciliation, SQL analytics marts</td><td align="center">Integrated</td></tr>
-    <tr><td><strong>03 · Data Quality</strong></td><td>Core integrity checks, source comparison, structured reports, isolated integration tests</td><td align="center">Integrated¹</td></tr>
-    <tr><td><strong>04 · Customer Analytics</strong></td><td>EDA, customer-level features, RFM metrics, coverage checks</td><td align="center">Integrated</td></tr>
-    <tr><td><strong>05 · Machine Learning</strong></td><td>RFM rule-based segmentation, K-Means baseline, cluster evaluation and profiling</td><td align="center">Baseline</td></tr>
-    <tr><td><strong>06 · Dashboard</strong></td><td>Sales Overview, Customer Analytics, RFM Segmentation</td><td align="center">MVP</td></tr>
-    <tr><td><strong>07 · Predictive AI</strong></td><td>Churn, forecasting, recommendation, product search</td><td align="center">Planned</td></tr>
-  </tbody>
+<tr>
+<td width="100%" valign="top">
+
+<h3><a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai">NEXORA COMMERCE AI</a> <sub>— flagship project</sub></h3>
+
+<p><strong>From retail transactions to an end-to-end commerce intelligence system.</strong></p>
+
+<p>
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" />
+<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" />
+<img alt="SQL" src="https://img.shields.io/badge/SQL-0F172A?style=flat-square" />
+<img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&amp;logo=scikitlearn&amp;logoColor=white" />
+<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&amp;logo=streamlit&amp;logoColor=white" />
+</p>
+
+<p>Raw retail data → validated Parquet → PostgreSQL → analytics marts → customer features → RFM / K-Means → interactive dashboard.</p>
+
+<p><strong>Highlights</strong>: data ingestion and quality checks, relational modeling, SQL metrics, customer segmentation, repeatable experiments, and a Streamlit analytics MVP.</p>
+
+<p><a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai"><strong>Explore source code and documentation →</strong></a></p>
+
+</td>
+</tr>
 </table>
 
-<sub>¹ Core/source validation was integrated; three SQL mart quality checks were explicitly deferred during that acceptance scope. “Integrated” does not mean every future quality gate or production criterion is complete.</sub>
+**Inside the pipeline:**
 
-### Analytics capabilities
+```mermaid
+flowchart LR
+    A[Retail dataset] --> B[Python ETL]
+    B --> C[(PostgreSQL)]
+    C --> D[Analytics marts]
+    D --> E[Customer features]
+    E --> F[RFM + K-Means]
+    D --> G[Streamlit dashboard]
+    F --> G
+```
 
-| Sales Overview | Customer Intelligence | Segmentation |
-|---|---|---|
-| Gross / net revenue | Recency, frequency, monetary | RFM score and segment |
-| Returns and refunds | Average order value | Segment sizes and contribution |
-| Invoice-segment reporting | Lifetime customer snapshot | K-Means cluster profiling |
-| Country and time trends | Repeat purchasing behavior | Consistent RFM logic shared with ML |
-
-> **Analytics note:** An *invoice segment* is not automatically a unique invoice when results are rolled up across multiple merchandise classifications or geographic groups. The dashboard documents this distinction rather than presenting a potentially double-counted metric as global distinct orders.
+<div align="center">
+<a href="https://github.com/Vu-Viet-Phong?tab=repositories"><strong>See all repositories ↗</strong></a>
+</div>
 
 ---
 
-## Tech Stack
-
-| Area | Technologies |
-|---|---|
-| Programming | Python 3.11 |
-| Data processing | Pandas, NumPy, PyArrow |
-| Storage and SQL | PostgreSQL 16, SQLAlchemy, psycopg |
-| Machine learning | scikit-learn · RFM rules · K-Means |
-| Application | Streamlit |
-| Testing | pytest · SQLite fixtures · isolated PostgreSQL tests |
-| Collaboration | Git · GitHub · feature branches / worktrees |
-| Documentation | Markdown learning notes and QA reports |
-
----
-
-## Repository Structure
-
-```text
-nexora-commerce-ai/
-├── app/
-│   ├── dashboard.py                 # Streamlit app entry point
-│   └── queries.py                   # PostgreSQL query / metric layer
-├── configs/                         # Project configuration
-├── data/
-│   ├── raw/                         # Local source data (not committed)
-│   ├── interim/                     # Cached/intermediate data
-│   └── processed/                   # Cleaned Parquet outputs
-├── deployment/                     # Development deployment configuration
-├── docs/
-│   ├── learning/                     # Vietnamese technical learning notes
-│   └── PROJECT_LEARNING_LOG.md       # Development and learning journal
-├── notebooks/                      # Data audit and exploratory notebooks
-├── sql/
-│   ├── schema.sql                   # PostgreSQL relational schema
-│   └── marts/                       # Reusable analytics marts
-├── src/
-│   ├── data/                        # Ingestion, cleaning, PostgreSQL loading
-│   ├── quality/                     # Data quality and reconciliation
-│   ├── analytics/                   # Customer analytics / feature engineering
-│   └── segmentation/                # RFM and K-Means
-├── tests/                           # Unit, contract, and integration tests
-├── .env.example                     # Configuration template, not credentials
-├── pyproject.toml                   # Python project / dependencies
-└── README.md
-```
-
-*Selected folders and files are shown for readability; see the repository for the full tree.*
-
----
-
-## Quick Start
-
-The project is developed on **Windows with native PostgreSQL**. The following commands are intended to run from the repository root in **PowerShell**.
-
-### 1. Clone and create a Python environment
-
-```powershell
-git clone https://github.com/Vu-Viet-Phong/nexora-commerce-ai.git
-cd nexora-commerce-ai
-py -3.11 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -e .
-```
-
-> If PowerShell prevents script activation, use `.\.venv\Scripts\python.exe` instead of `python` in subsequent commands. Dependencies are declared in [`pyproject.toml`](pyproject.toml).
-
-### 2. Prepare the data
-
-Download the **UCI Online Retail II** workbook from its original dataset source and place it inside:
-
-```text
-data/raw/uci/
-```
-
-Keep original input files unchanged; the repository intentionally does not commit large raw retail datasets.
-
-Run the ingestion and cleaning pipeline:
-
-```powershell
-python -m src.data.pipeline
-```
-
-Expected local artifacts include:
-
-```text
-data/interim/transactions_raw.parquet
-data/processed/transactions_clean.parquet
-data/processed/cleaning_summary.json
-```
-
-### 3. Configure PostgreSQL
-
-Create a local `.env` from the provided example:
-
-```powershell
-Copy-Item .env.example .env
-```
-
-Configure the connection values required by the project's SQLAlchemy modules. The dashboard query layer accepts `DATABASE_URL` (or `NEXORA_DATABASE_URL`) and supports the `postgresql+psycopg://` dialect.
-
-```text
-DATABASE_URL=postgresql+psycopg://USER:YOUR_URL_ENCODED_PASSWORD@localhost:5432/DATABASE
-```
-
-Use a **separate PostgreSQL role with `SELECT` privileges** when connecting the dashboard. Do not copy an example username/password into production, and never commit `.env`.
-
-The database layer uses [`sql/schema.sql`](sql/schema.sql), the loader under [`src/data/`](src/data/), and the three SQL scripts in [`sql/marts/`](sql/marts/). For initial schema creation, loading, metric definitions and integration details, follow the [Stage 2 PostgreSQL learning notes](docs/learning/stage_02_postgresql_sql.md); do not run destructive setup scripts against an existing populated database without reviewing them.
-
-### 4. Launch the dashboard
-
-Once the PostgreSQL marts are populated:
-
-```powershell
-python -m streamlit run app/dashboard.py
-```
-
-Open **http://localhost:8501** and explore the three views:
-
-1. **Sales Overview** — revenue, returns, time trends, geographic performance.
-2. **Customer Analytics** — customer KPIs, distribution, daily activity, top customers.
-3. **RFM Segmentation** — segment overview, score distributions, customer drilldown.
-
-<details>
-<summary><strong>Dashboard preview — adding screenshots</strong></summary>
-
-When a verified screenshot is available, save it under `docs/assets/dashboard_overview.png` and insert this into the README:
-
-```markdown
-![Nexora Dashboard](docs/assets/dashboard_overview.png)
-```
-
-A screenshot is not bundled with this README because no verified image asset exists in the repository materials provided.
-
-</details>
-
----
-
-## Tests and Data Quality
-
-Run the standard fast tests:
-
-```powershell
-python -m pytest -ra tests/
-```
-
-Run the dashboard tests alone while working on the interface:
-
-```powershell
-python -m pytest -ra tests/test_dashboard.py
-```
-
-PostgreSQL integration tests are intentionally isolated and may require explicit flags and a dedicated test database. For example, the Data Quality suite supports:
-
-```powershell
-python -m pytest -ra tests/test_quality/test_postgres.py --quality-postgres
-```
-
-**Do not enable database-destructive integration tests against the primary application database.** Skipped tests can be intentional and must not be reported as passed.
-
-### Validation evidence
-
-| Check | Reported outcome |
-|---|---|
-| Integrated regression suite | **165 passed, 35 skipped** |
-| Isolated PostgreSQL quality suite | **28 passed** |
-| Dashboard-specific tests after RFM integration | **23 passed** |
-| Customer feature verification | **5,942 customers** |
-
-<sub>Results above are from the project's October 2026 QA/integration reports, not a live CI badge or a claim that tests were rerun by this README author. The three mart validation gates deferred during Stage 2 should be tracked separately.</sub>
-
----
-
-## Documentation
-
-A core goal of this repository is to make **engineering decisions understandable and reproducible**. Most implementation learning notes are written in **Vietnamese**, alongside Python and SQL examples.
-
-| Document | Focus |
-|---|---|
-| [`docs/PROJECT_LEARNING_LOG.md`](docs/PROJECT_LEARNING_LOG.md) | Development chronology and learning outcomes |
-| [`docs/learning/stage_02_postgresql_sql.md`](docs/learning/stage_02_postgresql_sql.md) | Schema, loading, marts, reconciliation |
-| [`docs/learning/stage_02_data_quality.md`](docs/learning/stage_02_data_quality.md) | Data-quality checks and design |
-| [`docs/learning/customer_analytics_feature_engineering.md`](docs/learning/customer_analytics_feature_engineering.md) | Customer features and EDA |
-| [`docs/learning/customer_segmentation_ml.md`](docs/learning/customer_segmentation_ml.md) | RFM and K-Means theory and experiments |
-| [`docs/learning/analytics_dashboard_streamlit.md`](docs/learning/analytics_dashboard_streamlit.md) | Streamlit dashboard, queries and fixes |
-
-Integration reports and acceptance documents are maintained in the `docs/` area. Some historical QA reports may live on review branches and should not be mistaken for files already merged into `main`.
-
----
-
-## Roadmap
-
-The project is developed incrementally, with **a working analytics foundation before expanding into predictive and generative AI**.
-
-- [x] Raw ingestion, cleaning, audit, and Parquet pipeline
-- [x] PostgreSQL relational core and SQL analytics marts
-- [x] Source/core Data Quality validation and integration
-- [x] Customer feature engineering and EDA
-- [x] Rule-based RFM and K-Means clustering baseline
-- [x] Streamlit Analytics MVP integrated into `main`
-- [ ] Churn / repeat-purchase prediction with leakage-safe temporal validation
-- [ ] Demand and sales forecasting with rolling evaluation
-- [ ] Recommendation systems and multimodal product intelligence
-- [ ] API and application integration
-- [ ] AI analyst / Text-to-SQL and document retrieval
-- [ ] Deployment, observability, and MLOps
-
-**Next planned milestone:** **Customer Churn Prediction** — define the prediction target, prediction horizon, training cutoffs, and baseline before selecting a complex model.
-
----
-
-## Responsible Data Practices
-
-- **Local source data stays local.** `.env`, credentials, exports, and customer-level artifacts must not be committed.
-- **Read-only analytics by default.** Use a least-privilege PostgreSQL role for Streamlit and live analysis.
-- **Preserve business meaning.** Returns, cancellations, missing customer identifiers, and negative monetary values are treated explicitly.
-- **Avoid misleading metrics.** An invoice segment is not necessarily a globally unique order; historical snapshots must not be presented as point-in-time features without evidence.
-- **Restrict customer drilldowns.** The MVP is not intended for unrestricted public access to customer-level tables.
-
----
+### `02 / THE ARSENAL` — Tech stack
 
 <div align="center">
 
-### Built to learn. Designed to scale.
+**Languages & Databases**
 
-**Nexora Commerce AI** · Data Engineering · Analytics · Machine Learning
+<img alt="Python, PostgreSQL, Java, C and HTML" src="https://skillicons.dev/icons?i=python,postgres,java,c,html&amp;theme=dark" />
 
-Created and maintained by **[Vu-Viet-Phong](https://github.com/Vu-Viet-Phong)**
+<br />
+<br />
 
-[Back to top](#nexora-commerce-ai)
+**Data, Machine Learning & Apps**
+
+<img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&amp;logo=numpy&amp;logoColor=white" />
+<img alt="pandas" src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&amp;logo=pandas&amp;logoColor=white" />
+<img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&amp;logo=scikitlearn&amp;logoColor=white" />
+<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&amp;logo=streamlit&amp;logoColor=white" />
+<img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white" />
+
+<br />
+<br />
+
+**Workflow & Tools**
+
+<img alt="Git, GitHub and VS Code" src="https://skillicons.dev/icons?i=git,github,vscode&amp;theme=dark" />
+
+</div>
+
+---
+
+### `03 / CURRENT QUESTS` — What I'm exploring
+
+| Track | What I'm working toward |
+|:--|:--|
+| **Data Engineering** | Reproducible ETL, data quality, SQL analytics and reliable pipelines |
+| **Machine Learning** | RFM, clustering, recommendation systems and model evaluation |
+| **AI Commerce** | Customer intelligence, churn modeling and decision support |
+| **Real-world Software** | Turning notebooks into maintainable applications and dashboards |
+
+> **My philosophy:** The most interesting model is the one you can explain, reproduce, and actually use.
+
+---
+
+### `04 / SIGNAL` — GitHub activity
+
+<div align="center">
+
+<img width="49%" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=Vu-Viet-Phong&amp;show_icons=true&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=22D3EE&amp;icon_color=A78BFA&amp;text_color=C9D1D9&amp;ring_color=7C3AED" />
+<img width="49%" alt="Most used languages in public repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vu-Viet-Phong&amp;layout=compact&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=22D3EE&amp;text_color=C9D1D9&amp;langs_count=6" />
+
+<br />
+
+<img width="92%" alt="GitHub contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=Vu-Viet-Phong&amp;bg_color=0D1117&amp;color=A78BFA&amp;line=22D3EE&amp;point=FFFFFF&amp;area=true&amp;hide_border=true" />
+
+<sub>Live cards are generated by third-party services and may occasionally be unavailable.</sub>
+
+</div>
+
+---
+
+### `05 / NEXT LEVEL` — Roadmap
+
+```text
+[ COMPLETE ]  Data pipelines + PostgreSQL analytics
+[ COMPLETE ]  RFM / K-Means customer segmentation
+[ COMPLETE ]  Streamlit analytics dashboard MVP
+[ NEXT     ]  Churn prediction + repeat-purchase modeling
+[ PLANNED  ]  Forecasting, recommenders & intelligent APIs
+```
+
+<div align="center">
+
+### Let's turn ideas into working systems.
+
+<a href="https://github.com/Vu-Viet-Phong"><img alt="Connect on GitHub" src="https://img.shields.io/badge/CONNECT%20ON-GITHUB-111827?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+<a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai"><img alt="Explore Nexora Commerce AI" src="https://img.shields.io/badge/EXPLORE-NEXORA%20COMMERCE%20AI-7C3AED?style=for-the-badge&amp;logo=rocket&amp;logoColor=white" /></a>
+
+<img width="100%" alt="End of Vu Viet Phong GitHub Profile" src="https://capsule-render.vercel.app/api?type=waving&amp;height=120&amp;section=footer&amp;color=0:06B6D4,55:7C3AED,100:0B1021" />
 
 </div>
