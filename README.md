@@ -1,172 +1,138 @@
 <!--
-  GITHUB PROFILE README — Vu-Viet-Phong
-  Publish this file as: https://github.com/Vu-Viet-Phong/Vu-Viet-Phong/blob/main/README.md
-  Do NOT replace the README inside nexora-commerce-ai with this file.
+  GitHub PROFILE README for https://github.com/Vu-Viet-Phong
+  Place in the public repository: Vu-Viet-Phong/Vu-Viet-Phong
+  This is NOT the README for nexora-commerce-ai.
 -->
 
 <div align="center">
 
-<img width="100%" alt="Vu Viet Phong — Data Science, AI Engineering and Intelligent Systems" src="https://capsule-render.vercel.app/api?type=waving&amp;height=245&amp;color=0:0B1021,45:5521A3,75:7C3AED,100:06B6D4&amp;text=VU%20VIET%20PHONG&amp;fontColor=FFFFFF&amp;fontSize=54&amp;fontAlignY=40&amp;desc=DATA%20SCIENCE%20%E2%80%A2%20AI%20ENGINEERING%20%E2%80%A2%20INTELLIGENT%20SYSTEMS&amp;descAlignY=60&amp;descSize=17&amp;animation=fadeIn&amp;section=header" />
+<img width="100%" alt="Vu Viet Phong | Data Science, Machine Learning, Analytics" src="https://capsule-render.vercel.app/api?type=waving&amp;height=230&amp;color=0:0B1021,45:5521A3,75:7C3AED,100:06B6D4&amp;text=VU%20VIET%20PHONG&amp;fontColor=FFFFFF&amp;fontSize=52&amp;fontAlignY=39&amp;desc=DATA%20SCIENCE%20%E2%80%A2%20MACHINE%20LEARNING%20%E2%80%A2%20ANALYTICS&amp;descAlignY=60&amp;descSize=16&amp;animation=fadeIn&amp;section=header" />
 
-<a href="https://github.com/Vu-Viet-Phong">
-  <img alt="Animated introduction" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=600&amp;size=23&amp;duration=2900&amp;pause=900&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;width=820&amp;height=55&amp;lines=Turning+raw+data+into+real+decisions.;Building+data+products+that+actually+work.;Learn+deeply.+Build+boldly.+Ship+reliably." />
-</a>
+<img alt="A few things I'm working toward" src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=600&amp;size=22&amp;duration=3200&amp;pause=1100&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;width=780&amp;height=58&amp;lines=Learning+by+building+real-world+projects.;From+raw+data+to+meaningful+insights.;Aspiring+Data+Scientist+%7C+Always+learning." />
 
 <br />
 
-<a href="https://github.com/Vu-Viet-Phong?tab=repositories"><img alt="GitHub repositories" src="https://img.shields.io/badge/EXPLORE-MY%20PROJECTS-6D28D9?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
-<a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai"><img alt="Featured project Nexora Commerce AI" src="https://img.shields.io/badge/FEATURED-NEXORA%20AI-0891B2?style=for-the-badge&amp;logo=python&amp;logoColor=white" /></a>
-<img alt="Profile views" src="https://komarev.com/ghpvc/?username=Vu-Viet-Phong&amp;style=for-the-badge&amp;color=7C3AED&amp;label=PROFILE+VIEWS" />
+<a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai"><img alt="Explore Nexora Commerce AI" src="https://img.shields.io/badge/FEATURED%20PROJECT-NEXORA%20COMMERCE%20AI-6D28D9?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+<a href="https://github.com/Vu-Viet-Phong?tab=repositories"><img alt="Browse repositories" src="https://img.shields.io/badge/EXPLORE-MY%20REPOSITORIES-0891B2?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
 
 </div>
 
 ---
 
-### `> whoami`
+### `> about_me`
 
 ```yaml
 name: Vu Viet Phong
+education: Final-year undergraduate student | International University
 location: Vietnam
-education: Third-year student | International University
-passion: Statistics, Data Science & Artificial Intelligence
-focus:
-  - End-to-end data engineering
+career_goal: Aspiring Data Scientist
+interests:
+  - Statistics & data analysis
   - Machine learning & recommendation systems
-  - Turning prototypes into usable data products
+  - Building end-to-end data projects
 currently_building: Nexora Commerce AI
-mindset: "Don't just train models. Build systems that matter."
+approach: "Learn the fundamentals. Build. Evaluate. Improve."
 ```
 
-I'm a student and builder who enjoys working across the **full data journey**: understanding messy datasets, engineering reliable pipelines, designing useful metrics, training interpretable models, and putting the results into applications people can use.
+I'm a **final-year undergraduate student** interested in **Statistics, Data Science, and Machine Learning**. I learn through hands-on projects: exploring data, building pipelines, working with SQL, testing models, and turning results into something useful.
 
-My current interests include **data science, recommendation systems, multimodal learning, and AI-powered commerce**. I'm learning in public, one meaningful project at a time.
+I'm still growing my skills and documenting what I learn along the way. My goal is to develop into a Data Scientist who can **explain the methodology, validate the results, and build reproducible solutions**.
 
 ---
 
-### `01 / THE BUILD` — Featured project
+### `01 / FEATURED BUILD` — Nexora Commerce AI
 
-<table>
-<tr>
-<td width="100%" valign="top">
+> **A hands-on e-commerce intelligence project:** from messy retail transactions to analytics, customer segmentation, and a working dashboard.
 
-<h3><a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai">NEXORA COMMERCE AI</a> <sub>— flagship project</sub></h3>
+<div align="center">
 
-<p><strong>From retail transactions to an end-to-end commerce intelligence system.</strong></p>
-
-<p>
-<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" />
+<a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai"><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" /></a>
 <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" />
-<img alt="SQL" src="https://img.shields.io/badge/SQL-0F172A?style=flat-square" />
+<img alt="pandas" src="https://img.shields.io/badge/pandas-150458?style=flat-square&amp;logo=pandas&amp;logoColor=white" />
 <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&amp;logo=scikitlearn&amp;logoColor=white" />
 <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&amp;logo=streamlit&amp;logoColor=white" />
-</p>
 
-<p>Raw retail data → validated Parquet → PostgreSQL → analytics marts → customer features → RFM / K-Means → interactive dashboard.</p>
+</div>
 
-<p><strong>Highlights</strong>: data ingestion and quality checks, relational modeling, SQL metrics, customer segmentation, repeatable experiments, and a Streamlit analytics MVP.</p>
+**What I've built so far**
 
-<p><a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai"><strong>Explore source code and documentation →</strong></a></p>
+| Area | Implementation |
+| :-- | :-- |
+| **Data engineering** | Ingestion, cleaning, validation, and Parquet datasets |
+| **SQL & data quality** | PostgreSQL relational model, analytics marts, reconciliation checks |
+| **Customer analytics** | Exploratory analysis, RFM features and customer segmentation |
+| **Machine learning** | Reproducible K-Means baseline and cluster profiling |
+| **Visualization** | Streamlit dashboard for sales, customers, and RFM insights |
 
-</td>
-</tr>
-</table>
-
-**Inside the pipeline:**
+**Project workflow**
 
 ```mermaid
 flowchart LR
-    A[Retail dataset] --> B[Python ETL]
-    B --> C[(PostgreSQL)]
-    C --> D[Analytics marts]
-    D --> E[Customer features]
-    E --> F[RFM + K-Means]
-    D --> G[Streamlit dashboard]
+    A[Raw retail data] --> B[Python ETL]
+    B --> C[Cleaned Parquet]
+    C --> D[(PostgreSQL)]
+    D --> E[SQL analytics marts]
+    E --> F[RFM and K-Means]
+    E --> G[Streamlit dashboard]
     F --> G
 ```
 
 <div align="center">
-<a href="https://github.com/Vu-Viet-Phong?tab=repositories"><strong>See all repositories ↗</strong></a>
+
+**[Explore Nexora Commerce AI →](https://github.com/Vu-Viet-Phong/nexora-commerce-ai)**
+
+<sub>Ongoing learning project · Implemented features are not a claim of production deployment.</sub>
+
 </div>
 
 ---
 
-### `02 / THE ARSENAL` — Tech stack
+### `02 / TOOLBOX` — Technologies I use and learn
 
 <div align="center">
 
-**Languages & Databases**
+**Data & Programming**
 
-<img alt="Python, PostgreSQL, Java, C and HTML" src="https://skillicons.dev/icons?i=python,postgres,java,c,html&amp;theme=dark" />
-
-<br />
-<br />
-
-**Data, Machine Learning & Apps**
-
-<img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&amp;logo=numpy&amp;logoColor=white" />
-<img alt="pandas" src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&amp;logo=pandas&amp;logoColor=white" />
-<img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&amp;logo=scikitlearn&amp;logoColor=white" />
-<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&amp;logo=streamlit&amp;logoColor=white" />
-<img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white" />
+<img alt="Python, PostgreSQL, Git and VS Code" src="https://skillicons.dev/icons?i=python,postgres,git,vscode&amp;theme=dark" />
 
 <br />
 <br />
 
-**Workflow & Tools**
-
-<img alt="Git, GitHub and VS Code" src="https://skillicons.dev/icons?i=git,github,vscode&amp;theme=dark" />
+<img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&amp;logo=numpy&amp;logoColor=white" />
+<img alt="pandas" src="https://img.shields.io/badge/pandas-150458?style=flat-square&amp;logo=pandas&amp;logoColor=white" />
+<img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&amp;logo=jupyter&amp;logoColor=white" />
+<img alt="SQL" src="https://img.shields.io/badge/SQL-334155?style=flat-square&amp;logo=postgresql&amp;logoColor=white" />
+<img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&amp;logo=scikitlearn&amp;logoColor=white" />
+<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&amp;logo=streamlit&amp;logoColor=white" />
+<img alt="pytest" src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&amp;logo=pytest&amp;logoColor=white" />
 
 </div>
 
 ---
 
-### `03 / CURRENT QUESTS` — What I'm exploring
-
-| Track | What I'm working toward |
-|:--|:--|
-| **Data Engineering** | Reproducible ETL, data quality, SQL analytics and reliable pipelines |
-| **Machine Learning** | RFM, clustering, recommendation systems and model evaluation |
-| **AI Commerce** | Customer intelligence, churn modeling and decision support |
-| **Real-world Software** | Turning notebooks into maintainable applications and dashboards |
-
-> **My philosophy:** The most interesting model is the one you can explain, reproduce, and actually use.
-
----
-
-### `04 / SIGNAL` — GitHub activity
-
-<div align="center">
-
-<img width="49%" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=Vu-Viet-Phong&amp;show_icons=true&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=22D3EE&amp;icon_color=A78BFA&amp;text_color=C9D1D9&amp;ring_color=7C3AED" />
-<img width="49%" alt="Most used languages in public repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vu-Viet-Phong&amp;layout=compact&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=22D3EE&amp;text_color=C9D1D9&amp;langs_count=6" />
-
-<br />
-
-<img width="92%" alt="GitHub contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=Vu-Viet-Phong&amp;bg_color=0D1117&amp;color=A78BFA&amp;line=22D3EE&amp;point=FFFFFF&amp;area=true&amp;hide_border=true" />
-
-<sub>Live cards are generated by third-party services and may occasionally be unavailable.</sub>
-
-</div>
-
----
-
-### `05 / NEXT LEVEL` — Roadmap
+### `03 / LEARNING PATH` — What's next?
 
 ```text
-[ COMPLETE ]  Data pipelines + PostgreSQL analytics
-[ COMPLETE ]  RFM / K-Means customer segmentation
-[ COMPLETE ]  Streamlit analytics dashboard MVP
-[ NEXT     ]  Churn prediction + repeat-purchase modeling
-[ PLANNED  ]  Forecasting, recommenders & intelligent APIs
+[ BUILT ]  Data pipelines, PostgreSQL marts and data quality
+[ BUILT ]  Customer analytics, RFM and K-Means baseline
+[ BUILT ]  Streamlit analytics dashboard MVP
+[ NEXT  ]  Churn and repeat-purchase prediction
+[ LATER ]  Forecasting, recommendation systems and deployment
 ```
+
+> I care more about **understanding why a solution works** than collecting buzzwords. Each project is a chance to improve my fundamentals, coding practices, and communication.
+
+---
 
 <div align="center">
 
-### Let's turn ideas into working systems.
+### Thanks for visiting!
 
-<a href="https://github.com/Vu-Viet-Phong"><img alt="Connect on GitHub" src="https://img.shields.io/badge/CONNECT%20ON-GITHUB-111827?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
-<a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai"><img alt="Explore Nexora Commerce AI" src="https://img.shields.io/badge/EXPLORE-NEXORA%20COMMERCE%20AI-7C3AED?style=for-the-badge&amp;logo=rocket&amp;logoColor=white" /></a>
+**Learning consistently. Building one meaningful project at a time.**
 
-<img width="100%" alt="End of Vu Viet Phong GitHub Profile" src="https://capsule-render.vercel.app/api?type=waving&amp;height=120&amp;section=footer&amp;color=0:06B6D4,55:7C3AED,100:0B1021" />
+<a href="https://github.com/Vu-Viet-Phong?tab=repositories"><img alt="See all projects" src="https://img.shields.io/badge/SEE%20MY-REPOSITORIES-0F172A?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+<a href="https://github.com/Vu-Viet-Phong/nexora-commerce-ai"><img alt="View Nexora" src="https://img.shields.io/badge/VIEW-NEXORA%20PROJECT-6D28D9?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+
+<img width="100%" alt="Footer decoration" src="https://capsule-render.vercel.app/api?type=waving&amp;height=110&amp;section=footer&amp;color=0:06B6D4,55:7C3AED,100:0B1021" />
 
 </div>
